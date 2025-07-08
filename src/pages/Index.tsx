@@ -194,7 +194,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50 bg-transparent">
+            <div className="rounded-2xl p-8">
               <h4 className="text-xl font-semibold text-gray-800 mb-6">
                 Сегодняшние рекомендации
               </h4>
