@@ -75,8 +75,8 @@ const Index = () => {
           </div>
           <div className="flex justify-center">
             <img
-              src="/img/9c420c3e-eb66-4db7-b0de-4bec344e7875.jpg"
-              alt="Иллюстрация самопознания"
+              src="/img/582afd58-f650-4658-9ad6-cba3f616ae6c.jpg"
+              alt="Медитация и самопознание"
               className="rounded-2xl shadow-2xl max-w-md w-full"
             />
           </div>
