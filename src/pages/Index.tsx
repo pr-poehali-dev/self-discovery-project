@@ -52,23 +52,33 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold text-gray-800 mb-6">
-            Откройте себя с помощью <span className="text-indigo-600">ИИ</span>
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            Персональные рекомендации для развития на основе анализа ваших
-            привычек, целей и внутренних потребностей
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
-              <Icon name="Sparkles" size={20} className="mr-2" />
-              Начать путешествие
-            </Button>
-            <Button size="lg" variant="outline">
-              <Icon name="Play" size={20} className="mr-2" />
-              Посмотреть видео
-            </Button>
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <h2 className="text-5xl font-bold text-gray-800 mb-6">
+              Откройте себя с помощью{" "}
+              <span className="text-indigo-600">ИИ</span>
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Персональные рекомендации для развития на основе анализа ваших
+              привычек, целей и внутренних потребностей
+            </p>
+            <div className="flex space-x-4">
+              <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700">
+                <Icon name="Sparkles" size={20} className="mr-2" />
+                Начать путешествие
+              </Button>
+              <Button size="lg" variant="outline">
+                <Icon name="Play" size={20} className="mr-2" />
+                Посмотреть видео
+              </Button>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <img
+              src="/img/9c420c3e-eb66-4db7-b0de-4bec344e7875.jpg"
+              alt="Иллюстрация самопознания"
+              className="rounded-2xl shadow-2xl max-w-md w-full"
+            />
           </div>
         </div>
 
