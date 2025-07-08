@@ -55,8 +55,8 @@ const Index = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-5xl font-bold text-gray-800 mb-6">
-              Откройте себя с помощью{" "}
-              <span className="text-indigo-600">ИИ</span>
+              Путешествие к лучшей версии{" "}
+              <span className="text-indigo-600">себя</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8">
               Персональные рекомендации для развития на основе анализа ваших
@@ -150,72 +150,74 @@ const Index = () => {
         </div>
 
         {/* Progress Section */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
-          <div>
-            <h3 className="text-3xl font-bold text-gray-800 mb-6">
-              Ваш прогресс
-            </h3>
-            <p className="text-gray-600 mb-8">
-              Отслеживайте свое развитие в ключевых областях жизни. Наш ИИ
-              анализирует ваши данные и предлагает персональные рекомендации.
-            </p>
+        <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-12 border border-gray-200/50 mb-20">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-6">
+                Ваш прогресс
+              </h3>
+              <p className="text-gray-600 mb-8">
+                Отслеживайте свое развитие в ключевых областях жизни. Наш ИИ
+                анализирует ваши данные и предлагает персональные рекомендации.
+              </p>
 
-            <div className="space-y-6">
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium text-gray-700">
-                    Эмоциональный интеллект
-                  </span>
-                  <span className="text-sm text-gray-500">85%</span>
+              <div className="space-y-6">
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-700">
+                      Эмоциональный интеллект
+                    </span>
+                    <span className="text-sm text-gray-500">85%</span>
+                  </div>
+                  <Progress value={85} className="h-2" />
                 </div>
-                <Progress value={85} className="h-2" />
-              </div>
 
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium text-gray-700">
-                    Осознанность
-                  </span>
-                  <span className="text-sm text-gray-500">72%</span>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-700">
+                      Осознанность
+                    </span>
+                    <span className="text-sm text-gray-500">72%</span>
+                  </div>
+                  <Progress value={72} className="h-2" />
                 </div>
-                <Progress value={72} className="h-2" />
-              </div>
 
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="text-sm font-medium text-gray-700">
-                    Целеполагание
-                  </span>
-                  <span className="text-sm text-gray-500">91%</span>
+                <div>
+                  <div className="flex justify-between mb-2">
+                    <span className="text-sm font-medium text-gray-700">
+                      Целеполагание
+                    </span>
+                    <span className="text-sm text-gray-500">91%</span>
+                  </div>
+                  <Progress value={91} className="h-2" />
                 </div>
-                <Progress value={91} className="h-2" />
               </div>
             </div>
-          </div>
 
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50">
-            <h4 className="text-xl font-semibold text-gray-800 mb-6">
-              Сегодняшние рекомендации
-            </h4>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
-                <p className="text-gray-700">
-                  Практикуйте медитацию 10 минут утром для улучшения
-                  концентрации
-                </p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
-                <p className="text-gray-700">
-                  Запишите 3 вещи, за которые вы благодарны сегодня
-                </p>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
-                <p className="text-gray-700">
-                  Прочитайте статью о развитии эмпатии
-                </p>
+            <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-8 border border-gray-200/50">
+              <h4 className="text-xl font-semibold text-gray-800 mb-6">
+                Сегодняшние рекомендации
+              </h4>
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
+                  <p className="text-gray-700">
+                    Практикуйте медитацию 10 минут утром для улучшения
+                    концентрации
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
+                  <p className="text-gray-700">
+                    Запишите 3 вещи, за которые вы благодарны сегодня
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-indigo-600 rounded-full mt-2"></div>
+                  <p className="text-gray-700">
+                    Прочитайте статью о развитии эмпатии
+                  </p>
+                </div>
               </div>
             </div>
           </div>
